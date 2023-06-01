@@ -22,10 +22,10 @@ class MyInfo extends StatelessWidget {
               backgroundImage: AssetImage("assets/pp.png"),
             ),
             Spacer(),
-            Text("Aary Jadhav",
+            Text("Mayuri Kadam",
               style: Theme.of(context).textTheme.subtitle2,
             ),
-            Text("Computer Enginerring Student &\nFlutter Developer",
+            Text("CA Student",
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w200,

@@ -99,7 +99,20 @@ class _SideMenuState extends State<SideMenu> {
                       Spacer(),
                     ],
                   ),
-                )
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: defaultPadding),
+                 // color: Color(0xFF24242E),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Spacer(),
+                      Text("By Aary Jadhav",style: GoogleFonts.poppins(color: Colors.white,fontSize: 10)),
+                      Spacer(),
+                    ],
+                  ),
+                ),
+
               ],
             ),
           ))

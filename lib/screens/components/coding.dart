@@ -10,48 +10,74 @@ class Coding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Divider(),
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+        child: Text(
+          "Softwares",
+          style: Theme.of(context).textTheme.subtitle2,
+        ),
+      ),
+      AnimatedLinearProgressIndicator(
+        percentage: 0.95,
+        label: "Tally ERP 9.0",
+      ),
+      SizedBox(
+        height: defaultPadding / 2,
+      ),
+      AnimatedLinearProgressIndicator(
+        percentage: 0.80,
+        label: "Winman",
+      ),
+      SizedBox(
+        height: defaultPadding / 2,
+      ),
+      AnimatedLinearProgressIndicator(
+        percentage: 0.60,
+        label: "Microsoft Excel",
+      ),
+      SizedBox(
+        height: defaultPadding / 2,
+      ),
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Divider(),
-    Padding(
-    padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-    child: Text(
-    "Coding",
-    style: Theme.of(context).textTheme.subtitle2,
-    ),
-    ),
-    AnimatedLinearProgressIndicator(percentage: 0.7,label: "Dart",),
-    SizedBox(height: defaultPadding/2,),
-    AnimatedLinearProgressIndicator(percentage: 0.3,label: "HTML",),
-    SizedBox(height: defaultPadding/2,),
-    AnimatedLinearProgressIndicator(percentage: 0.30,label: "PHP",),
-    SizedBox(height: defaultPadding/2,),
-          Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Divider(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-                  child: Text(
-                    "Editing",
-                    style: Theme.of(context).textTheme.subtitle2,
-                  ),
-                ),
-                EditingAnimatedLinearProgressIndicator(percentage: 0.70,label: "Adobe Photoshop",),
-                SizedBox(height: defaultPadding/2,),
-                EditingAnimatedLinearProgressIndicator(percentage: 0.90,label: "Adobe Premire Pro",),
-                SizedBox(height: defaultPadding/2,),
-                EditingAnimatedLinearProgressIndicator(percentage: 0.55,label: "Adobe After Effects",),
-                SizedBox(height: defaultPadding/2,),
-                EditingAnimatedLinearProgressIndicator(percentage: 0.90,label: "Canva",),
-                SizedBox(height: defaultPadding/2,),
-              ]
-
-          )
-    ]
-
-    );
-
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+          child: Text(
+            "Skills",
+            style: Theme.of(context).textTheme.subtitle2,
+          ),
+        ),
+        EditingAnimatedLinearProgressIndicator(
+          percentage: 0.70,
+          label: "Financial Statements",
+        ),
+        SizedBox(
+          height: defaultPadding / 2,
+        ),
+        EditingAnimatedLinearProgressIndicator(
+          percentage: 0.90,
+          label: "Organization Skills",
+        ),
+        SizedBox(
+          height: defaultPadding / 2,
+        ),
+        EditingAnimatedLinearProgressIndicator(
+          percentage: 0.55,
+          label: "Team Management",
+        ),
+        SizedBox(
+          height: defaultPadding / 2,
+        ),
+        EditingAnimatedLinearProgressIndicator(
+          percentage: 0.90,
+          label: "Leadership",
+        ),
+        SizedBox(
+          height: defaultPadding / 2,
+        ),
+      ])
+    ]);
   }
 }

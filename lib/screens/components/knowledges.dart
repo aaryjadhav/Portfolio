@@ -22,16 +22,13 @@ class Knowledges extends StatelessWidget {
           ),
         ),
         KnowledgeText(
-          text: 'Flutter, Dart',
+          text: 'Microsoft Word',
         ),
         KnowledgeText(
-          text: 'Firebase',
+          text: 'Microsoft Excel',
         ),
         KnowledgeText(
-          text: 'Photoshop,',
-        ),
-        KnowledgeText(
-          text: 'Premire Pro, After Effects',
+          text: 'Winman Software',
         ),
       ],
     );

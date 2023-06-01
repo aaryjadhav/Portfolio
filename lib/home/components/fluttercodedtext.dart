@@ -11,7 +11,7 @@ class FlutterCodedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text.rich(TextSpan(text: "<", children: [
       TextSpan(
-        text: " flutter ",
+        text: " ca ",
         style: GoogleFonts.poppins(color: Colors.amber),
       ),
       TextSpan(text: ">"),
