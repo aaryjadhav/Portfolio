@@ -17,6 +17,8 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+          color: darkColor, borderRadius: BorderRadius.circular(10)),
       padding: const EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(
@@ -40,7 +42,7 @@ class ProjectCard extends StatelessWidget {
             onPressed: () {},
             child: Text(
               "Read More >>",
-              style: TextStyle(color: primaryColor),
+              style: TextStyle(color: Colors.yellow),
             ),
           ),
         ],

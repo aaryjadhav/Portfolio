@@ -51,6 +51,8 @@ dependencies:
   syncfusion_flutter_pdfviewer: ^21.2.6
 
 
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -78,13 +80,14 @@ flutter:
     - assets/gekko_knife.png
     - assets/gekko.png
     - assets/aary.jpg
-    - assets/pp.png
     - assets/github.svg
     - assets/linkedin.svg
     - assets/twitter.svg
     - assets/aary.png
     - assets/bg.jpeg
     - assets/check.svg
+    - assets/bg.jpg
+    - assets/aary.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

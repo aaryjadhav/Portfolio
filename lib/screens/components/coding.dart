@@ -11,68 +11,71 @@ class Coding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Divider(),
+
       Padding(
         padding: const EdgeInsets.symmetric(vertical: defaultPadding),
         child: Text(
-          "Softwares",
+          "Coding",
           style: Theme.of(context).textTheme.subtitle2,
         ),
       ),
       AnimatedLinearProgressIndicator(
         percentage: 0.95,
-        label: "Tally ERP 9.0",
+        label: "Dart",
       ),
       SizedBox(
         height: defaultPadding / 2,
       ),
       AnimatedLinearProgressIndicator(
         percentage: 0.80,
-        label: "Winman",
+        label: "HTML",
       ),
       SizedBox(
         height: defaultPadding / 2,
       ),
       AnimatedLinearProgressIndicator(
-        percentage: 0.60,
-        label: "Microsoft Excel",
+        percentage: 0.30,
+        label: "PHP",
       ),
       SizedBox(
         height: defaultPadding / 2,
       ),
       Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Divider(),
+        SizedBox(
+          height: defaultPadding,
+        ),
+        Divider(thickness: 1,color: primaryColor,),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
-            "Skills",
+            "Editing",
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
         EditingAnimatedLinearProgressIndicator(
-          percentage: 0.70,
-          label: "Financial Statements",
+          percentage: 0.80,
+          label: "Adobe Photoshop",
         ),
         SizedBox(
           height: defaultPadding / 2,
         ),
         EditingAnimatedLinearProgressIndicator(
           percentage: 0.90,
-          label: "Organization Skills",
+          label: "Adobe Premire Pro",
         ),
         SizedBox(
           height: defaultPadding / 2,
         ),
         EditingAnimatedLinearProgressIndicator(
           percentage: 0.55,
-          label: "Team Management",
+          label: "Adobe After Effects",
         ),
         SizedBox(
           height: defaultPadding / 2,
         ),
         EditingAnimatedLinearProgressIndicator(
-          percentage: 0.90,
-          label: "Leadership",
+          percentage: 1,
+          label: "Canva",
         ),
         SizedBox(
           height: defaultPadding / 2,

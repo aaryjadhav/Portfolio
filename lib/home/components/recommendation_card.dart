@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/models/recommendation.dart';
 import 'package:portfolio/screens/constants.dart';
 
-
 class RecommendationCard extends StatelessWidget {
   const RecommendationCard({
     Key? key,
@@ -14,10 +13,10 @@ class RecommendationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
+      decoration: BoxDecoration(
+          color: darkColor, borderRadius: BorderRadius.circular(10)),
       width: 300,
       padding: EdgeInsets.all(defaultPadding),
-      color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

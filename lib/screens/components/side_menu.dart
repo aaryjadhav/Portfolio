@@ -26,6 +26,24 @@ class SideMenu extends StatefulWidget {
 }
 
 class _SideMenuState extends State<SideMenu> {
+  _lauchURL()async{
+    const url="https://drive.google.com/file/d/1RjOIELHeV5DnfjPZvRun_gV92c0GLvlR/view?usp=sharing";
+    if(await canLaunch(url)){
+      await launch(url);
+    }
+    else{
+      throw "Could not launch $url";
+    }
+  }
+  _lauchWEBSITE()async{
+    const url="https://aaryjadhav-portfolio.netlify.app";
+    if(await canLaunch(url)){
+      await launch(url);
+    }
+    else{
+      throw "Could not launch $url";
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -49,34 +67,58 @@ class _SideMenuState extends State<SideMenu> {
                   title: "Age",
                   text: "18",
                 ),
+                SizedBox(
+                  height: defaultPadding,
+                ),
+                Divider(thickness: 1,color: primaryColor,),
                 Skills(),
                 SizedBox(
                   height: defaultPadding,
                 ),
+                Divider(thickness: 1,color: primaryColor,),
                 Coding(),
-                Knowledges(),
-                Divider(),
                 SizedBox(
-                  height: defaultPadding / 2,
+                  height: defaultPadding,
                 ),
-                TextButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>pdfview(
-
-                      )));
-                    },
-                    child: FittedBox(
-                      child: Row(
-                        children: [
-                          Text("VIEW CV",
-                              style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500, fontSize: 15)),
-                          SizedBox(
-                            width: defaultPadding / 2,
+                Divider(thickness: 1,color: primaryColor,),
+                Knowledges(),
+                SizedBox(
+                  height: defaultPadding,
+                ),
+                Divider(thickness: 1,color: primaryColor,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                        onPressed: _lauchURL,
+                        child: FittedBox(
+                          child: Row(
+                            children: [
+                              Text("VIEW CV",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500, fontSize: 15)),
+                              SizedBox(
+                                width: defaultPadding / 2,
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    )),
+                        )),
+                    TextButton(
+                        onPressed: _lauchWEBSITE,
+                        child: FittedBox(
+                          child: Row(
+                            children: [
+                              Text("VIEW WEBSITE",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500, fontSize: 15)),
+                              SizedBox(
+                                width: defaultPadding / 2,
+                              ),
+                            ],
+                          ),
+                        )),
+                  ],
+                ),
                 Container(
                   margin: EdgeInsets.only(top: defaultPadding),
                   color: Color(0xFF24242E),

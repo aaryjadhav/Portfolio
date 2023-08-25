@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/screens/constants.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({
@@ -11,7 +12,11 @@ class MyInfo extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        color: Color(0xFF242430),
+        decoration: BoxDecoration(
+          color: darkColor,
+          borderRadius: BorderRadius.only(bottomRight: Radius.circular(15))
+        ),
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -19,16 +24,17 @@ class MyInfo extends StatelessWidget {
             //SizedBox(height: 30,),
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("assets/pp.png"),
+              backgroundImage: AssetImage("assets/aary.png"),
             ),
             Spacer(),
-            Text("Mayuri Kadam",
+            Text("Aary Jadhav",
               style: Theme.of(context).textTheme.subtitle2,
             ),
-            Text("CA Student",
+            Text("Flutter Developer | Video Editior at\nBranding Catalyst Pvt.Ltd"
+                "",
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.w200,
+                  fontWeight: FontWeight.w400,
                   height: 1.5,
                 )
             ),
